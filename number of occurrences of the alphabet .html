@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <title>Counting Characters</title>
+       </head>
+    <body>
+
+      <h1>Occurencies of Alphabets</h1>
+      <input id="sentence" type="text">
+      <button onclick="myFunction()">Try it</button>
+      <script>
+          function myFunction(){
+            var str = document.getElementById("sentence").value;
+            var count = str.match(/i/g);
+            alert(count.length);
+          }
+      </script>
+   </body>
+</html>
