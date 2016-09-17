@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link href="style.css" ref="stylesheet">
+    <img src="Desktop/guess.jpg" alt="The Game" style="width:500px;height:400px;">
+    <title="The Guesing Game">
+  </head>
+      <body>
+        <h3>Please enter your Name.</h3>
+        <input id="name" type="text">
+        <button onclick="guess()">Continue</button>
+
+          <script>
+                function guess() {
+
+
+                var randomNumber = Math.floor(Math.random() * 100) + 1;
+                var guess = prompt('I have taken a Number, So can you guess wht number i have take')
+                if (parseInt(guess) === randomNumber ) {
+                  document.write('Dude You Got it Right');
+                }
+                else {
+                  document.write('<h2>Sorry Joor You Are Wrong. <br />The Answer was ' + randomNumber + '</h2>')
+                }
+              }
+          </script>
+      </body>
+</html>
