@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Finding the minimum number in a set of an Array</title>
+      </head>
+          <body>
+              <h2>Given the array below, find the minimum number in the array, and its index."
+                  Input: [1, 2, 45, -7, 24, 6, 5, -12, 14]</h1>
+              <p>just click the button below</p>
+              <button onclick="indexOfSmallest()">GO</button>
+
+            <script>
+            function indexOfSmallest(a) {
+              var temp = [1, 2, 45, -7, 24, 6, 5, -12, 14]
+              var index = 0;
+              var value = temp[0];
+              for (var i = 1; i < temp.length; i++) {
+                if (temp[i] < value) {
+                  value = temp[i];
+                  index = i;
+                  console.log(index);
+              }
+            }
+                /*<var lowest = 0;
+                var a = [1, 2, 45, -7, 24, 6, 5, -12, 14];
+                for (var i = 1; i < a.length; i++) {
+                if {(a[0] < a[lowest]) lowest = i;}
+              }*/
+
+              }
+        </script>
+    </body>
+</html>
+I will definately find it out
