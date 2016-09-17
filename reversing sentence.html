@@ -1,0 +1,24 @@
+<html>
+  <head>
+
+      <title>Reversing the sentence</title>
+
+  </head>
+      <body>
+
+              <h2>Reversing the given input.</h2>
+              <p>Insert your sentence in the provided space and Click the button to display the array values after "Reversing"</p>
+              <input id="sentence" type= "text">
+              <button onclick="reverse(sentence.value)">process</button>
+
+          <script>
+          function reverse(sentence) {
+              var reversed = [];
+              sentence.split(' ').forEach(function (word) {
+                  reversed.push(word.split('').reverse().join(''));
+              });
+              console.log(reversed.join(' '));
+          }
+         </script>
+     </body>
+</html>
